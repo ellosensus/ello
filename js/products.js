@@ -91,6 +91,40 @@ const products = [
         image: 'images/products/chabranco1.png',
         modalImage: 'images/products/velachabranco1.png',
         available: true
+    },
+    {
+        id: 'incenso-rosas',
+        name: 'Incenso de Rosas',
+        number: '06',
+        price: 89.90,
+        shortDescription: 'Fragrância clássica e envolvente que celebra a delicadeza das rosas.',
+        fullDescription: 'Uma homenagem à flor mais icônica. O incenso de rosas traz o aroma clássico e envolvente que celembra a delicadeza e a beleza atemporal das rosas em sua essência mais pura.',
+        occasion: 'Perfeita para criar uma atmosfera romântica e sofisticada, ideal para momentos de reflexão e descanso.',
+        notes: {
+            top: ['damasco', 'bergamota'],
+            heart: ['rosa búlgara', 'gerânio'],
+            base: ['patchouli', 'almíscar']
+        },
+        image: 'images/products/incensoderosas1.png',
+        modalImage: 'images/products/velaincensoderosas1.png',
+        available: true
+    },
+    {
+        id: 'lemon-sugar',
+        name: 'Lemon Sugar',
+        number: '07',
+        price: 89.90,
+        shortDescription: 'Uma explosão de frescor cítrico com notas adocicadas que alegram o ambiente.',
+        fullDescription: 'Combinação perfeita entre o frescor vibrante do limão e a suavidade do açúcar. Lemon Sugar é uma fragrância alegre e energizante que traz leveza e bem-estar a qualquer espaço.',
+        occasion: 'Ideal para cozinhas, áreas de trabalho e ambientes que precisam de um toque de leveza e positividade.',
+        notes: {
+            top: ['limão siciliano', 'laranja', 'toranja'],
+            heart: ['açúcar cristalizado', 'baunilha'],
+            base: ['amadeirado leve', 'musk']
+        },
+        image: 'images/products/lemonsugar1.png',
+        modalImage: 'images/products/velalemonsugar1.png',
+        available: true
     }
 ];
 
