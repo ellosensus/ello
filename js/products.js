@@ -20,7 +20,8 @@ const products = [
             heart: ['rosa', 'frésia', 'lírio do vale'],
             base: ['musk', 'ambergris']
         },
-        image: 'images/products/jasmim.jpg', // Adicione sua imagem aqui
+        image: 'images/products/jasmim1.png',
+        modalImage: 'images/products/velajasmim1.png',
         available: true
     },
     {
@@ -36,7 +37,8 @@ const products = [
             heart: ['notas verdes', 'ervas'],
             base: ['musk', 'cedro', 'patchouli']
         },
-        image: 'images/products/cascas-folhas.jpg',
+        image: 'images/products/cascasefolhas1.png',
+        modalImage: 'images/products/velacascasefolhas1.png',
         available: true
     },
     {
@@ -52,7 +54,8 @@ const products = [
             heart: ['maçã', 'figo'],
             base: ['sândalo', 'baunilha', 'caramelo']
         },
-        image: 'images/products/figo.jpg',
+        image: 'images/products/figo1.png',
+        modalImage: 'images/products/velafigo1.png',
         available: true
     },
     {
@@ -68,7 +71,8 @@ const products = [
             heart: ['musgo verde', 'cedro'],
             base: ['canela', 'baunilha']
         },
-        image: 'images/products/cafe.jpg',
+        image: 'images/products/cafe1.png',
+        modalImage: 'images/products/velacafe1.png',
         available: true
     },
     {
@@ -84,7 +88,8 @@ const products = [
             heart: ['violeta', 'lírio do vale'],
             base: ['musk']
         },
-        image: 'images/products/cha-branco.jpg',
+        image: 'images/products/chabranco1.png',
+        modalImage: 'images/products/velachabranco1.png',
         available: true
     }
 ];
