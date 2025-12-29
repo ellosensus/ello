@@ -315,6 +315,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollToTop();
     preventInputZoom();
     
+    // Renderiza produtos
+    renderProducts();
+    
     // Log de produtos carregados
     console.log(`${products.length} produtos carregados`);
 });

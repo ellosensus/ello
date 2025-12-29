@@ -235,6 +235,5 @@ function searchProducts(searchTerm) {
  * INICIALIZAÇÃO DOS COMPONENTES
  */
 document.addEventListener('DOMContentLoaded', function() {
-    renderProducts();
     setupModalListeners();
 });
