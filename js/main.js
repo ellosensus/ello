@@ -136,23 +136,12 @@ function initScrollAnimations() {
 
 /**
  * LAZY LOADING DE IMAGENS
- * Carrega imagens quando necessário
+ * Carrega imagens quando necessário - DESABILITADO
  */
 function initLazyLoading() {
-    const images = document.querySelectorAll('img[data-src]');
-    
-    const imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    images.forEach(img => imageObserver.observe(img));
+    // Lazy loading desabilitado para evitar problemas de carregamento
+    // As imagens são carregadas normalmente com fallback para branco
+    return;
 }
 
 /**

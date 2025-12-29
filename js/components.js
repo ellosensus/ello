@@ -20,9 +20,11 @@ function createProductCard(product) {
     return `
         <div class="product-card ${availabilityClass}" data-product-id="${product.id}">
             <div class="product-image">
-                <img src="${product.image || productConfig.defaultImage}" 
+                <img src="${product.image || ''}" 
                      alt="${product.name}" 
-                     onerror="this.src='${productConfig.defaultImage}'">
+                     onload="this.style.display='block'"
+                     onerror="this.style.display='none'"
+                     style="display:none;">
                 <div class="product-number">${product.number}</div>
             </div>
             <div class="product-info">
@@ -70,9 +72,11 @@ function createProductModal(product) {
         <div class="modal-body">
             <div class="modal-product-header">
                 <div class="modal-product-image">
-                    <img src="${product.image || productConfig.defaultImage}" 
+                    <img src="${product.image || ''}" 
                          alt="${product.name}"
-                         onerror="this.src='${productConfig.defaultImage}'">
+                         onload="this.style.display='block'"
+                         onerror="this.style.display='none'"
+                         style="display:none;">
                 </div>
                 <div class="modal-product-info">
                     <div class="modal-product-number">${product.number}</div>
