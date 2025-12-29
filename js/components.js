@@ -72,7 +72,7 @@ function createProductModal(product) {
         <div class="modal-body">
             <div class="modal-product-header">
                 <div class="modal-product-image">
-                    <img src="${product.image || ''}" 
+                    <img src="${product.modalImage || product.image || ''}" 
                          alt="${product.name}"
                          onload="this.style.display='block'"
                          onerror="this.style.display='none'"
