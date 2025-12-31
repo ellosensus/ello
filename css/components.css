@@ -289,10 +289,18 @@
     margin-bottom: var(--spacing-sm);
 }
 
+.packaging-card img {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+    margin: var(--spacing-md) 0;
+    display: block;
+}
+
 .packaging-card p {
     font-size: 0.95rem;
     color: var(--color-text);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 /* ============================================
