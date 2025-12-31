@@ -19,8 +19,8 @@
     --color-white: #FFFFFF;
     
     /* Tipografia */
-    --font-heading: 'Cormorant Garamond', serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Work Sans', sans-serif;
     
     /* Espaçamento */
     --spacing-xs: 0.5rem;
