@@ -25,7 +25,6 @@ function createProductCard(product) {
                      onload="this.style.display='block'"
                      onerror="this.style.display='none'"
                      style="display:none;">
-                <div class="product-number">${product.number}</div>
             </div>
             <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
@@ -79,7 +78,6 @@ function createProductModal(product) {
                          style="display:none;">
                 </div>
                 <div class="modal-product-info">
-                    <div class="modal-product-number">${product.number}</div>
                     <h2 class="modal-product-name">${product.name}</h2>
                     ${priceDisplay}
                     <div class="modal-product-description">
