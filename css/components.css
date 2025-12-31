@@ -305,6 +305,13 @@
     text-align: center;
 }
 
+.custom-content p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .occasions {
     margin: var(--spacing-lg) 0;
     padding: var(--spacing-lg);
