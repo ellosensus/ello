@@ -10,7 +10,6 @@ const products = [
     {
         id: 'jasmim',
         name: 'Jasmim',
-        number: '01',
         price: 89.90,
         shortDescription: 'Aroma elegante e convidativo, tornando o ambiente intimista.',
         fullDescription: 'Com perfume característico, o jasmim-bogari é originário da Ásia e Oriente Médio. É bem conhecido como "flor perfumada", por seu aroma exótico e intenso e por ser considerado um símbolo de amor e beleza.',
@@ -27,7 +26,6 @@ const products = [
     {
         id: 'cascas-folhas',
         name: 'Cascas & Folhas',
-        number: '02',
         price: 89.90,
         shortDescription: 'Fragrância refrescante com sensação de limpeza.',
         fullDescription: 'Explosão de notas aromáticas herbais capaz de materializar o verde de uma floresta após uma forte chuva.',
@@ -44,7 +42,6 @@ const products = [
     {
         id: 'figo',
         name: 'Figo',
-        number: '03',
         price: 89.90,
         shortDescription: 'Uma verdadeira jornada sensorial alegre e revitalizante.',
         fullDescription: 'Imagine a conexão entre a jovialidade e um toque moderno e efervescente. O resultado é uma verdadeira jornada sensorial alegre e revitalizante.',
@@ -61,7 +58,6 @@ const products = [
     {
         id: 'cafe',
         name: 'Café',
-        number: '04',
         price: 89.90,
         shortDescription: 'Um verdadeiro paradoxo olfativo, capaz de elevar as boas vibrações.',
         fullDescription: 'Fragrância exótica. Relaxante e energizante, um verdadeiro paradoxo olfativo, capaz de elevar as boas vibrações, provendo aconchego e sofisticação ao ambiente.',
@@ -78,7 +74,6 @@ const products = [
     {
         id: 'cha-branco',
         name: 'Chá Branco',
-        number: '05',
         price: 89.90,
         shortDescription: 'Sofisticação em um aroma. Notas suaves com tons florais.',
         fullDescription: 'Se a sofisticação fosse definida por apenas um aroma seria chá branco. Notas suaves e com tons florais e levemente frutadas e adocicadas. Perfume delicado acentuado por uma camada de luminosidade e vitalidade.',
@@ -95,7 +90,6 @@ const products = [
     {
         id: 'incenso-rosas',
         name: 'Incenso de Rosas',
-        number: '06',
         price: 89.90,
         shortDescription: 'Fragrância clássica e envolvente que celebra a delicadeza das rosas.',
         fullDescription: 'Uma homenagem à flor mais icônica. O incenso de rosas traz o aroma clássico e envolvente que celembra a delicadeza e a beleza atemporal das rosas em sua essência mais pura.',
@@ -112,7 +106,6 @@ const products = [
     {
         id: 'lemon-sugar',
         name: 'Lemon Sugar',
-        number: '07',
         price: 89.90,
         shortDescription: 'Uma explosão de frescor cítrico com notas adocicadas que alegram o ambiente.',
         fullDescription: 'Combinação perfeita entre o frescor vibrante do limão e a suavidade do açúcar. Lemon Sugar é uma fragrância alegre e energizante que traz leveza e bem-estar a qualquer espaço.',
