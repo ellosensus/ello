@@ -82,6 +82,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-sm);
 }
 
+h2 + p,
+h2 + .values,
+.section-title + .about-text,
+.section-title + .values {
+    margin-top: calc(var(--spacing-sm) * -0.5);
+}
+
 h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
 h2 { font-size: clamp(2rem, 4vw, 3rem); }
 h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
