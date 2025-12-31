@@ -9,13 +9,13 @@
 
 :root {
     /* Cores */
-    --color-primary: #2C2C2C;
-    --color-secondary: #D4AF37;
-    --color-accent: #8B7355;
+    --color-primary: #A88943;
+    --color-secondary: #A88943;
+    --color-accent: #A88943;
     --color-bg: #FAFAF8;
     --color-bg-dark: #2C2C2C;
-    --color-text: #333333;
-    --color-text-light: #666666;
+    --color-text: #7D7D7D;
+    --color-text-light: #7F7F7F;
     --color-white: #FFFFFF;
     
     /* Tipografia */
