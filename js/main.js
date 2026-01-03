@@ -325,6 +325,58 @@ window.addEventListener('resize', function() {
 });
 
 /**
+ * EMAIL FORM HANDLER
+ * Gerencia envio do formulário de email
+ */
+function initEmailForm() {
+    const form = document.getElementById('email-form');
+    if (!form) return;
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const email = form.querySelector('input[type="email"]').value;
+        const message = form.querySelector('textarea').value;
+        
+        // Construir mailto link com template de email
+        const subject = encodeURIComponent('Contato ELLO - Novo Pedido');
+        const body = encodeURIComponent(`De: ${email}\n\nMensagem:\n${message}`);
+        const mailtoLink = `mailto:r.aragaorebello@gmail.com?subject=${subject}&body=${body}`;
+        
+        // Abrir cliente de email padrão
+        window.location.href = mailtoLink;
+        
+        // Mostrar feedback
+        const button = form.querySelector('button[type="submit"]');
+        const originalText = button.textContent;
+        button.textContent = 'Email aberto!';
+        button.style.backgroundColor = '#4CAF50';
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.style.backgroundColor = '';
+            form.reset();
+        }, 2000);
+    });
+}
+
+/**
+ * INICIALIZAÇÃO GERAL
+ * Chama funções de inicialização quando DOM estiver pronto
+ */
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        initMobileMenu();
+        initNavbarScroll();
+        initEmailForm();
+    });
+} else {
+    initMobileMenu();
+    initNavbarScroll();
+    initEmailForm();
+}
+
+/**
  * ERROR HANDLING
  * Captura erros globais
  */
