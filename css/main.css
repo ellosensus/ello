@@ -130,13 +130,22 @@ strong {
     padding: 0 var(--spacing-md);
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
 .section {
     padding: var(--spacing-xl) 0;
+    margin: var(--spacing-xl) 0;
 }
 
 .section-dark {
     background-color: var(--color-bg-dark);
     color: var(--color-white);
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0;
 }
 
 .section-dark .lead,
@@ -245,13 +254,14 @@ strong {
    ============================================ */
 
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #FAFAF8 0%, #f0ede8 100%);
     position: relative;
     margin-top: 70px;
+    padding: var(--spacing-lg) 0;
 }
 
 .hero::before {
@@ -261,8 +271,18 @@ strong {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    background-image: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
                       radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.1) 0%, transparent 50%);
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hero-content {
@@ -273,20 +293,33 @@ strong {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 300;
     margin-bottom: var(--spacing-md);
     color: var(--color-primary);
     letter-spacing: 0.05em;
+    animation: slideUp 0.8s ease-out 0.1s both;
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.25rem);
     color: var(--color-text-light);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ============================================
@@ -307,16 +340,23 @@ strong {
     text-align: center;
 }
 
+.btn-small {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
 .btn-primary {
     background-color: var(--color-secondary);
     color: var(--color-white);
     box-shadow: var(--shadow-sm);
+    animation: slideUp 0.8s ease-out 0.3s both;
 }
 
 .btn-primary:hover {
     background-color: #c9a030;
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
 }
 
 .btn-secondary {
@@ -442,9 +482,28 @@ strong {
     
     .section {
         padding: var(--spacing-lg) 0;
+        margin: var(--spacing-md) 0;
     }
     
     :root {
         --spacing-xl: 4rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -10,10 +10,12 @@
 .about-content {
     display: grid;
     gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .about-text {
-    max-width: 800px;
+    max-width: 900px;
+    margin-bottom: var(--spacing-lg);
 }
 
 .values-title {
@@ -22,21 +24,26 @@
 
 .values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 }
 
 .value-card {
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     background-color: var(--color-white);
     border: 1px solid rgba(44, 44, 44, 0.1);
     transition: var(--transition-normal);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
 }
 
 .value-card:hover {
     border-color: var(--color-secondary);
-    box-shadow: var(--shadow-sm);
-    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
 }
 
 .value-number {
@@ -65,11 +72,28 @@
 
 .collection-intro {
     text-align: center;
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+    pointer-events: none;
 }
 
 .collection-description {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .collection-description .lead {
@@ -93,8 +117,9 @@
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .product-card {
@@ -105,11 +130,12 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
 }
 
 .product-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-10px);
     border-color: var(--color-secondary);
 }
 
@@ -132,7 +158,7 @@
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .product-number {
@@ -210,22 +236,27 @@
 
 .details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
 
 .detail-card {
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     background-color: var(--color-white);
     border: 1px solid rgba(44, 44, 44, 0.1);
     text-align: center;
     transition: var(--transition-normal);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .detail-card:hover {
     border-color: var(--color-secondary);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
 }
 
 .detail-icon {
@@ -249,6 +280,15 @@
     margin-top: var(--spacing-xl);
 }
 
+/* ============================================
+   PACKAGING SECTION (STANDALONE)
+   ============================================ */
+
+.packaging-section-full {
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
 .subsection-title {
     font-size: 2rem;
     font-weight: 300;
@@ -268,6 +308,13 @@
     background-color: var(--color-white);
     border: 2px solid var(--color-secondary);
     position: relative;
+    transition: var(--transition-normal);
+    border-radius: 4px;
+}
+
+.packaging-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-6px);
 }
 
 .packaging-tag {
@@ -308,9 +355,10 @@
    ============================================ */
 
 .custom-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    padding: var(--spacing-lg) 0;
 }
 
 .custom-content p {
@@ -321,10 +369,11 @@
 }
 
 .occasions {
-    margin: var(--spacing-lg) 0;
-    padding: var(--spacing-lg);
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-xl);
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
+    max-width: 900px;
 }
 
 .occasions h3 {
@@ -359,7 +408,7 @@
    ============================================ */
 
 .contact-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
@@ -373,8 +422,8 @@
 
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
 }
 
@@ -383,13 +432,18 @@
     background-color: var(--color-white);
     border: 1px solid rgba(44, 44, 44, 0.1);
     transition: var(--transition-normal);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 .contact-card:hover {
     border-color: var(--color-secondary);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
 }
 
 .contact-icon {
@@ -406,7 +460,82 @@
 .contact-card p {
     font-size: 0.95rem;
     color: var(--color-text-light);
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-action {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: var(--transition-normal);
+}
+
+.contact-card:hover .contact-action {
+    transform: translateX(4px);
+}
+
+/* Email Form */
+.contact-form-card {
+    cursor: auto;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    width: 100%;
+}
+
+.email-form input,
+.email-form textarea {
+    padding: var(--spacing-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    border: 1px solid rgba(44, 44, 44, 0.15);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--color-text);
+    transition: var(--transition-normal);
+    resize: none;
+    border-radius: 2px;
+}
+
+.email-form input:focus,
+.email-form textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 2px rgba(168, 137, 67, 0.1);
+}
+
+.email-form input::placeholder,
+.email-form textarea::placeholder {
+    color: var(--color-text-light);
+    opacity: 0.7;
+}
+
+/* WhatsApp Card */
+.contact-whatsapp {
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.05) 0%, rgba(37, 211, 102, 0.02) 100%);
+    border-color: rgba(37, 211, 102, 0.2);
+}
+
+.contact-whatsapp:hover {
+    border-color: #25d366;
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.1) 0%, rgba(37, 211, 102, 0.05) 100%);
+}
+
+/* Instagram Card */
+.contact-instagram {
+    background: linear-gradient(135deg, rgba(217, 31, 126, 0.05) 0%, rgba(252, 146, 2, 0.05) 100%);
+    border-color: rgba(217, 31, 126, 0.15);
+}
+
+.contact-instagram:hover {
+    border-color: #d91f7e;
+    background: linear-gradient(135deg, rgba(217, 31, 126, 0.12) 0%, rgba(252, 146, 2, 0.08) 100%);
 }
 
 /* ============================================
@@ -575,5 +704,10 @@
     
     .contact-methods {
         grid-template-columns: 1fr;
+    }
+    
+    .email-form input,
+    .email-form textarea {
+        font-size: 16px;
     }
 }
