@@ -465,6 +465,7 @@ strong {
         padding: var(--spacing-lg) var(--spacing-md);
         transition: var(--transition-normal);
         box-shadow: var(--shadow-md);
+        gap: var(--spacing-sm);
     }
     
     .nav-menu.active {
