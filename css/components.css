@@ -72,8 +72,8 @@
 
 .collection-intro {
     text-align: center;
-    margin: var(--spacing-xl) 0;
-    padding: var(--spacing-xl) 0;
+    margin: 0;
+    padding: var(--spacing-lg) 0;
     position: relative;
     overflow: hidden;
 }
@@ -236,13 +236,13 @@
 
 .details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
 
 .detail-card {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     background-color: var(--color-white);
     border: 1px solid rgba(44, 44, 44, 0.1);
     text-align: center;
@@ -251,6 +251,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .detail-card:hover {
@@ -422,9 +424,12 @@
 
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-card {
@@ -687,6 +692,10 @@
 
 @media (max-width: 768px) {
     .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .details-grid {
         grid-template-columns: 1fr;
     }
     

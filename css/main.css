@@ -141,6 +141,12 @@ strong {
     margin: var(--spacing-xl) 0;
 }
 
+.contact {
+    margin-top: var(--spacing-md) !important;
+    margin-bottom: var(--spacing-xl) !important;
+    padding: var(--spacing-lg) 0 !important;
+}
+
 .section-dark {
     background-color: var(--color-bg-dark);
     color: var(--color-white);
@@ -254,14 +260,14 @@ strong {
    ============================================ */
 
 .hero {
-    min-height: 70vh;
+    min-height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #FAFAF8 0%, #f0ede8 100%);
     position: relative;
     margin-top: 70px;
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
 }
 
 .hero::before {
