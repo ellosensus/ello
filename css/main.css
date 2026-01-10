@@ -381,7 +381,7 @@ strong {
    ============================================ */
 
 .section-header {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
 }
 
 .section-header.centered {
