@@ -289,6 +289,8 @@
 .packaging-section-full {
     background-color: var(--color-bg);
     text-align: center;
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-lg) 0;
 }
 
 .subsection-title {
@@ -342,7 +344,7 @@
     max-width: 100%;
     height: auto;
     width: 250px;
-    margin: var(--spacing-md) 0;
+    margin: var(--spacing-md) auto;
     display: block;
 }
 
