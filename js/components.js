@@ -46,7 +46,7 @@ function createProductCard(product) {
  */
 function createProductModal(product) {
     const priceDisplay = productConfig.showPrices 
-        ? `<div class="modal-product-price">${productConfig.currency} ${product.price.toFixed(2)}</div>`
+        ? `<div class="modal-product-price">53,00 e 82,00</div>`
         : '';
     
     const notesHTML = `
