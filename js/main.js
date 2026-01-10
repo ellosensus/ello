@@ -302,6 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initActiveMenuHighlight();
     initContactForm();
     initScrollToTop();
+    initEmailForm();
     preventInputZoom();
     
     // Renderiza produtos
@@ -358,22 +359,6 @@ function initEmailForm() {
             form.reset();
         }, 2000);
     });
-}
-
-/**
- * INICIALIZAÇÃO GERAL
- * Chama funções de inicialização quando DOM estiver pronto
- */
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-        initMobileMenu();
-        initNavbarScroll();
-        initEmailForm();
-    });
-} else {
-    initMobileMenu();
-    initNavbarScroll();
-    initEmailForm();
 }
 
 /**
