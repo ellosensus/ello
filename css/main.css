@@ -137,14 +137,14 @@ strong {
 }
 
 .section {
-    padding: var(--spacing-xl) 0;
-    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
+    margin: var(--spacing-md) 0;
 }
 
 .contact {
-    margin-top: var(--spacing-md) !important;
-    margin-bottom: var(--spacing-xl) !important;
-    padding: var(--spacing-lg) 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: var(--spacing-lg) !important;
+    padding: var(--spacing-md) 0 !important;
 }
 
 .section-dark {
