@@ -207,6 +207,7 @@
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--color-primary);
+    white-space: nowrap;
 }
 
 .product-link {
