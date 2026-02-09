@@ -118,6 +118,22 @@ const products = [
         image: 'images/products/lemonsugar1.png',
         modalImage: 'images/products/velalemonsugar1.png',
         available: true
+    },
+    {
+        id: 'nova-fragrancia',
+        name: 'Nova Fragrância',
+        price: 89.90,
+        shortDescription: 'Uma explosão de frescor cítrico com notas adocicadas que alegram o ambiente.',
+        fullDescription: 'Combinação perfeita entre o frescor vibrante do limão e a suavidade do açúcar. Lemon Sugar é uma fragrância alegre e energizante que traz leveza e bem-estar a qualquer espaço.',
+        occasion: 'Ideal para cozinhas, áreas de trabalho e ambientes que precisam de um toque de leveza e positividade.',
+        notes: {
+            top: ['limão siciliano', 'laranja', 'toranja'],
+            heart: ['açúcar cristalizado', 'baunilha'],
+            base: ['amadeirado leve', 'musk']
+        },
+        image: 'images/products/lemonsugar1.png',
+        modalImage: 'images/products/velalemonsugar1.png',
+        available: true
     }
 ];
 
