@@ -11,7 +11,7 @@
  */
 function createProductCard(product) {
     const priceDisplay = productConfig.showPrices 
-        ? `<span class="product-price">53,00 e 82,00</span>`
+        ? `<span class="product-price">45,00 e 82,00</span>`
         : '';
     
     const availabilityClass = product.available ? '' : 'product-unavailable';
@@ -46,7 +46,7 @@ function createProductCard(product) {
  */
 function createProductModal(product) {
     const priceDisplay = productConfig.showPrices 
-        ? `<div class="modal-product-price">53,00 e 82,00</div>`
+        ? `<div class="modal-product-price">45,00 e 82,00</div>`
         : '';
     
     const notesHTML = `
