@@ -100,7 +100,15 @@ p {
 }
 
 .about-text p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2rem !important;
+    display: block !important;
+    white-space: normal !important;
+}
+
+.about-text p:first-child {
+    white-space: normal !important;
+    word-break: normal !important;
+    line-break: auto !important;
 }
 
 .lead {
