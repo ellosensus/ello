@@ -10,8 +10,9 @@
  * @returns {string} HTML do card
  */
 function createProductCard(product) {
+    const priceText = product.id === 'nova-fragrancia' ? '49,99 e 99,99' : '45,00 e 82,00';
     const priceDisplay = productConfig.showPrices 
-        ? `<span class="product-price">45,00 e 82,00</span>`
+        ? `<span class="product-price">${priceText}</span>`
         : '';
     
     const availabilityClass = product.available ? '' : 'product-unavailable';
@@ -45,8 +46,9 @@ function createProductCard(product) {
  * @returns {string} HTML do modal
  */
 function createProductModal(product) {
+    const priceText = product.id === 'nova-fragrancia' ? '49,99 e 99,99' : '45,00 e 82,00';
     const priceDisplay = productConfig.showPrices 
-        ? `<div class="modal-product-price">45,00 e 82,00</div>`
+        ? `<div class="modal-product-price">${priceText}</div>`
         : '';
     
     const notesHTML = `

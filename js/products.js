@@ -122,14 +122,14 @@ const products = [
     {
         id: 'nova-fragrancia',
         name: 'Nova Fragrância',
-        price: 89.90,
-        shortDescription: 'Uma explosão de frescor cítrico com notas adocicadas que alegram o ambiente.',
-        fullDescription: 'Combinação perfeita entre o frescor vibrante do limão e a suavidade do açúcar. Lemon Sugar é uma fragrância alegre e energizante que traz leveza e bem-estar a qualquer espaço.',
-        occasion: 'Ideal para cozinhas, áreas de trabalho e ambientes que precisam de um toque de leveza e positividade.',
+        price: 49.99,
+        shortDescription: 'A escolha perfeita para quem deseja criar um ambiente sofisticado e revigorante,  combinando notas frutais e florais delicadas.',
+        fullDescription: 'Esta fragrância transmite elegância e suavidade. O toque de frescor de pêras recém-amadurecidas é recolhida em um buquê de frésias brancas e adoçada pelo âmbar, patchouli e madeiras.',
+        occasion: 'Um perfume ideal para ambientes requintados, aqueles com um clássico e aconchegante, com esse aroma que torna o espaço mais envolvente.',
         notes: {
-            top: ['limão siciliano', 'laranja', 'toranja'],
-            heart: ['açúcar cristalizado', 'baunilha'],
-            base: ['amadeirado leve', 'musk']
+            top: ['pêra', 'limão', 'bergamota'],
+            heart: ['frésia', 'rosa branca'],
+            base: ['patchouli', 'musk', 'âmbar']
         },
         image: 'images/products/novafragrancia1.png',
         modalImage: 'images/products/velanovafragrancia1.png',
