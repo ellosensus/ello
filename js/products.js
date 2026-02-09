@@ -131,8 +131,8 @@ const products = [
             heart: ['açúcar cristalizado', 'baunilha'],
             base: ['amadeirado leve', 'musk']
         },
-        image: 'images/products/lemonsugar1.png',
-        modalImage: 'images/products/velalemonsugar1.png',
+        image: 'images/products/velanovafragrancia1.png',
+        modalImage: 'images/products/velanovafragrancia1.png',
         available: true
     }
 ];
