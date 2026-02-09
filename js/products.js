@@ -8,6 +8,22 @@
 
 const products = [
     {
+        id: 'nova-fragrancia',
+        name: 'Nova Fragrância',
+        price: 49.99,
+        shortDescription: 'A escolha perfeita para quem deseja criar um ambiente sofisticado e revigorante.',
+        fullDescription: 'Esta fragrância transmite elegância e suavidade. O toque de frescor de pêras recém-amadurecidas é recolhida em um buquê de frésias brancas e adoçada pelo âmbar, patchouli e madeiras.',
+        occasion: 'Um perfume ideal para ambientes requintados, aqueles com um clássico e aconchegante, com esse aroma que torna o espaço mais envolvente.',
+        notes: {
+            top: ['pêra', 'limão', 'bergamota'],
+            heart: ['frésia', 'rosa branca'],
+            base: ['patchouli', 'musk', 'âmbar']
+        },
+        image: 'images/products/novafragrancia1.png',
+        modalImage: 'images/products/velanovafragrancia1.png',
+        available: true
+    },
+    {
         id: 'jasmim',
         name: 'Jasmim',
         price: 89.90,
@@ -117,22 +133,6 @@ const products = [
         },
         image: 'images/products/lemonsugar1.png',
         modalImage: 'images/products/velalemonsugar1.png',
-        available: true
-    },
-    {
-        id: 'nova-fragrancia',
-        name: 'Nova Fragrância',
-        price: 49.99,
-        shortDescription: 'A escolha perfeita para quem deseja criar um ambiente sofisticado e revigorante,  combinando notas frutais e florais delicadas.',
-        fullDescription: 'Esta fragrância transmite elegância e suavidade. O toque de frescor de pêras recém-amadurecidas é recolhida em um buquê de frésias brancas e adoçada pelo âmbar, patchouli e madeiras.',
-        occasion: 'Um perfume ideal para ambientes requintados, aqueles com um clássico e aconchegante, com esse aroma que torna o espaço mais envolvente.',
-        notes: {
-            top: ['pêra', 'limão', 'bergamota'],
-            heart: ['frésia', 'rosa branca'],
-            base: ['patchouli', 'musk', 'âmbar']
-        },
-        image: 'images/products/novafragrancia1.png',
-        modalImage: 'images/products/velanovafragrancia1.png',
         available: true
     }
 ];
